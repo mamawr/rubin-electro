@@ -1,0 +1,199 @@
+@charset "UTF-8";
+
+:root {
+	--font-size: 16px;
+	--line-height: 24px;
+	--color-text: #202124;
+	--color-link: #0d6efd;
+
+	--header-height: 3em;
+	--header-shadow: 0 5px 5px rgb(136 145 157 / 9%), 0 1px 0 #e6eaed;
+}
+
+*:focus {
+  outline: none;
+}
+
+body {
+	margin: 0;
+	font-family: Roboto, sans-serif;
+	font-weight: 400;
+	font-size: var(--font-size);
+	line-height: var(--line-height);
+	color: var(--color-text);
+	height: 100vh;
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+}
+
+.wrapper {
+	width: calc(100% - 4vw);
+	margin: auto;
+	max-width: 1190px;
+}
+
+header {
+	height: var(--header-height);
+	box-shadow: var(--header-shadow);
+	margin-bottom: 2em;
+}
+
+header a {
+	text-decoration: none;
+	color: var(--color-link);
+}
+
+header>.wrapper {
+	display: flex;
+	align-items: stretch;
+	font-weight: 700;
+	font-size: 0.9em;
+	text-transform: uppercase;
+	gap: 3em;
+	height: 100%;
+}
+
+header .logo {
+	flex-grow: 1;
+	display: flex;
+	font-family: 'Montserrat Alternates', sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	text-transform: none;
+	font-size: 1.8em;
+	text-transform: lowercase;
+	color: #5f6368;
+	align-items: center;
+	gap: 5px;
+}
+
+header .logo img {
+	max-height: 70%;
+}
+
+header .logo>div {
+	padding-bottom: 5px;
+}
+
+
+header ul {
+	display: flex;
+	align-items: center;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	gap: 2em;
+	min-width: 0;
+}
+
+header li {
+	white-space: nowrap;
+	position: relative;
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+header li:after {    
+	background: none repeat scroll 0 0 transparent;
+	bottom: 0;
+	content: "";
+	display: block;
+	height: 3px;
+	left: 50%;
+	position: absolute;
+	background: var(--color-link);
+	transition: width 0.3s ease 0s, left 0.3s ease 0s;
+	width: 0;
+}
+
+header li:hover:after { 
+	width: 100%; 
+	left: 0; 
+}
+
+.cardset img {
+	border-radius: 6px;
+	max-width: 100%;
+}
+
+.cardset-1 {
+	display: grid;
+	grid-template-columns: 2fr 1fr 1fr;
+	grid-template-areas: "card-technology card-battery-green card-battery-green" 
+                         "card-technology card-battery-red-aa card-battery-red-aaa";
+	grid-gap: 2.2vw;
+	width: 100%;
+	max-width: 100%;
+}
+
+footer {
+	margin-top: 3em;
+	padding-top: 1em;
+	background-color: #efefef;
+}
+
+footer nav {
+	display: flex;
+	align-items: stretch;
+	flex-wrap: wrap;
+	width: 100%;
+	gap: 2.2vw;
+}
+
+footer nav>* {
+	flex: 1;
+	flex-grow: 1;
+}
+
+footer h3 {
+	font-size: 81.25%;
+	margin: 0.8125em 0 0.2em 0;
+}
+
+footer nav ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+footer nav li {
+	line-height: 1.2em;
+	white-space: nowrap;
+}
+
+footer nav ul  a {
+	text-decoration: none;
+	color: #656565;
+	font-size: 81.25%;
+}
+
+.foot-line {
+	margin-top: 1.8em;
+	height: 4em;
+	background-color: #1f2024;
+	font-size: 0.8em;
+	white-space: nowrap;
+}
+
+.foot-line,
+.foot-line a {
+	color: white;
+	text-decoration: none;
+}
+
+.foot-line>.wrapper {
+	display: flex;
+	align-items: center;
+	height: 100%;
+	gap: 1.5em;
+}
+
+.foot-line>.wrapper>* {
+	display: inline-block;
+}
+
+.foot-line>.wrapper>*:last-child {
+	flex-grow: 1;
+	text-align: right;
+}
