@@ -29,12 +29,14 @@
         </section>
       </nav>
     </div>
+
     <div class="foot-line">
-      <div class="wrapper">
+      <div class="wrapper scrollable unselectable">
         <a href="#">Terms of Use</a>
         <a href="#">About this Site</a>
         <a href="#">Site Map</a>
         <div>Copyright 2021 ООО "Рубин-Электро"</div>
       </div>
     </div>
+
   </footer>

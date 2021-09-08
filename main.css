@@ -14,6 +14,29 @@
   outline: none;
 }
 
+/* ATTENTION! It takes "overflow: hidden;" for ALL parents due to bug */
+.scrollable {
+	overflow-x: auto;
+	scrollbar-width: none; /* Firefox */
+	-ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+
+.scrollable::-webkit-scrollbar {
+	display: none;
+	width: 0;
+	height: 0;
+}
+
+
+.unselectable {
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none; /* Safari */
+	-khtml-user-select: none; /* Konqueror HTML */
+	-moz-user-select: none; /* Old versions of Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+	user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+
 body {
 	margin: 0;
 	font-family: Roboto, sans-serif;
@@ -22,8 +45,10 @@ body {
 	line-height: var(--line-height);
 	color: var(--color-text);
 	height: 100vh;
+/*
 	display: grid;
 	grid-template-rows: auto 1fr auto;
+*/
 }
 
 .wrapper {
@@ -36,6 +61,7 @@ header {
 	height: var(--header-height);
 	box-shadow: var(--header-shadow);
 	margin-bottom: 2em;
+	overflow: hidden; /* Bug fix to make child flex cell (ul) scrollable */
 }
 
 header a {
@@ -83,7 +109,6 @@ header ul {
 	padding: 0;
 	margin: 0;
 	gap: 2em;
-	min-width: 0;
 }
 
 header li {
@@ -131,6 +156,7 @@ footer {
 	margin-top: 3em;
 	padding-top: 1em;
 	background-color: #efefef;
+	overflow: hidden;
 }
 
 footer nav {
@@ -196,4 +222,5 @@ footer nav ul  a {
 .foot-line>.wrapper>*:last-child {
 	flex-grow: 1;
 	text-align: right;
+	color: #898991;
 }
