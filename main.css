@@ -6,8 +6,10 @@
 	--color-text: #202124;
 	--color-link: #0d6efd;
 
-	--header-height: 3em;
+	--header-height: 3.4em;
 	--header-shadow: 0 5px 5px rgb(136 145 157 / 9%), 0 1px 0 #e6eaed;
+
+	--content-margin-vertical: 1em;
 }
 
 *:focus {
@@ -44,8 +46,8 @@ body {
 	font-size: var(--font-size);
 	line-height: var(--line-height);
 	color: var(--color-text);
-	height: 100vh;
 /*
+	height: 100vh;
 	display: grid;
 	grid-template-rows: auto 1fr auto;
 */
@@ -60,8 +62,8 @@ body {
 header {
 	height: var(--header-height);
 	box-shadow: var(--header-shadow);
-	margin-bottom: 2em;
 	overflow: hidden; /* Bug fix to make child flex cell (ul) scrollable */
+	background-color: white;
 }
 
 header a {
@@ -86,7 +88,7 @@ header .logo {
 	font-weight: normal;
 	font-style: normal;
 	text-transform: none;
-	font-size: 1.8em;
+	font-size: 1.5em;
 	text-transform: lowercase;
 	color: #5f6368;
 	align-items: center;
@@ -94,7 +96,7 @@ header .logo {
 }
 
 header .logo img {
-	max-height: 70%;
+	max-height: 65%;
 }
 
 header .logo>div {
@@ -135,6 +137,10 @@ header li:after {
 header li:hover:after { 
 	width: 100%; 
 	left: 0; 
+}
+
+.content {
+	margin-top: var(--content-margin-vertical);
 }
 
 .cardset img {

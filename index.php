@@ -6,7 +6,7 @@
 <body>
   <?php include('_header.php'); ?>
 
-  <div class="wrapper">
+  <div class="wrapper content">
 
     <div class="cardset cardset-1">
       <div style="grid-area: card-technology">
