@@ -2,6 +2,9 @@
 <html lang="ru-RU">
 <head>
   <?php include('_meta.php'); ?>
+
+  <link rel="stylesheet" href="/css/index.css" media="all" />
+
 </head>
 <body>
   <?php include('_header.php'); ?>

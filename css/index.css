@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+.cardset-1 {
+	display: grid;
+	grid-template-columns: 2fr 1fr 1fr;
+	grid-template-areas: "card-technology card-battery-green card-battery-green" 
+                         "card-technology card-battery-red-aa card-battery-red-aaa";
+	grid-gap: 2.2vw;
+	width: 100%;
+	max-width: 100%;
+}
+
+
+@media (max-width: 414px) {
+
+	.cardset-1 {
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas: "card-battery-green card-battery-green" 
+							"card-battery-red-aa card-battery-red-aaa"
+							"card-technology card-technology";
+	}
+
+}

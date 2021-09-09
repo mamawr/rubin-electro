@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+:root {
+	--font-size: 16px;
+	--line-height: 24px;
+	--color-text: #202124;
+	--color-link: #0d6efd;
+
+	--header-height: 3.4em;
+	--header-shadow: 0 5px 5px rgb(136 145 157 / 9%), 0 1px 0 #e6eaed;
+
+	--content-margin-vertical: 1em;
+}
+
+*:focus {
+  outline: none;
+}
+
+/* ATTENTION! It takes "overflow: hidden;" for ALL parents due to bug */
+.scrollable {
+	overflow-x: auto;
+	scrollbar-width: none; /* Firefox */
+	-ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+
+.scrollable::-webkit-scrollbar {
+	display: none;
+	width: 0;
+	height: 0;
+}
+
+
+.unselectable {
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none; /* Safari */
+	-khtml-user-select: none; /* Konqueror HTML */
+	-moz-user-select: none; /* Old versions of Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+	user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+
+body {
+	margin: 0;
+	font-family: Roboto, sans-serif;
+	font-weight: 400;
+	font-size: var(--font-size);
+	line-height: var(--line-height);
+	color: var(--color-text);
+/*
+	height: 100vh;
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+*/
+}
+
+.wrapper {
+	width: calc(100% - 4vw);
+	margin: auto;
+	max-width: 1190px;
+}
+
+.content {
+	margin-top: var(--content-margin-vertical);
+}
+
+.cardset img {
+	border-radius: 6px;
+	max-width: 100%;
+}
+
+
+@media (max-width: 414px) {
+
+	.content {
+		margin-top: var(--content-margin-vertical));
+		margin-bottom: var(--content-margin-vertical);
+	}
+
+}

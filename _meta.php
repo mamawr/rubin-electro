@@ -14,5 +14,6 @@
   <link rel="preload" as="font" href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@600&display=swap" />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@600&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="main.css?v0.1" media="all" />
-  <link rel="stylesheet" href="mobile.css?v0.1" media="all" />
+  <link rel="stylesheet" href="/css/common.css" media="all" />
+  <link rel="stylesheet" href="/css/header.css" media="all" />
+  <link rel="stylesheet" href="/css/footer.css" media="all" />
