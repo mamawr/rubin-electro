@@ -1,6 +1,6 @@
   <header>
     <div class="wrapper">
-      <a href="" class="logo"><img src="/img/icon-192x192.png" /><div>Рубин</div></a>
+      <a href="/" class="logo"><img src="/img/icon-192x192.png" /><div>Рубин</div></a>
       <ul class="scrollable unselectable">
         <li><a href="#">Продукция</a></li>
         <li><a href="#">Где купить</a></li>

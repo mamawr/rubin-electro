@@ -1,6 +1,10 @@
 <!doctype html>
 <html lang="ru-RU">
 <head>
+  <title>Рубин - аккумуляторы, батарейки, официальный сайт</title>
+  <meta name="description" content="Аккумуляторы и батарейки Рубин. Официальный сайт." />
+  <link rel="canonical" href="https://rubin-electro.ru/" />
+
   <?php include('_meta.php'); ?>
 
   <link rel="stylesheet" href="/css/index.css" media="all" />
@@ -13,7 +17,7 @@
 
     <div class="cardset cardset-1">
       <div style="grid-area: card-technology">
-        <a href="#"><img src="img/aibo.jpg"/></a>
+        <a href="/technology.php"><img src="img/aibo.jpg"/></a>
         Технологии <strong>Рубин&trade; Li-ion</strong>
       </div>
 

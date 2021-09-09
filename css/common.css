@@ -63,11 +63,24 @@ body {
 	margin-top: var(--content-margin-vertical);
 }
 
+.gray-text {
+	color: #858585;
+	font-size: 0.875em;
+	line-height: 1.25em;
+}
+
 .cardset img {
 	border-radius: 6px;
 	max-width: 100%;
 }
 
+h1 {
+	font-size: 2em;
+	font-weight: bold;
+	line-height: 1.3;
+	margin-top: 0.67em;
+	margin-bottom: 0.67em;
+}
 
 @media (max-width: 414px) {
 
