@@ -1,3 +1,13 @@
 AddDefaultCharset UTF-8
 php_value default_charset UTF-8
 
+RewriteEngine on
+Options +FollowSymlinks -Indexes
+RewriteBase /
+
+RedirectMatch 404 /\.git
+RedirectMatch 404 /\.gitignore
+
+RewriteRule ^goods$ goods/ [R,L]
+RewriteRule ^goods/$ goods.php [L]
+
