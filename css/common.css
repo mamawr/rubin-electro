@@ -103,3 +103,48 @@ h1 {
 	}
 
 }
+
+.centered-header {
+	width: 45%;
+	margin: 3em auto 4.5em auto;
+	text-align: center;
+}
+
+@media (max-width: 860px) {
+
+	.centered-header {
+		width: 75%;
+	}
+}
+
+@media (max-width: 810px) {
+	.centered-header {
+		margin-top: 2.5em;
+	}
+
+}
+
+@media (max-width: 660px) {
+	h1 {
+		font-size: 1.75em;
+	}
+}
+
+@media (max-width: 520px) {
+	.centered-header {
+		width: 90%;
+		margin-top: 2em;
+		margin-bottom: 3em;
+	}
+	h1 {
+		font-size: 1.5em;
+	}
+
+}
+
+@media (max-width: 420px) {
+	.centered-header {
+		width: 100%;
+		margin-top: 1.5em;
+	}
+}

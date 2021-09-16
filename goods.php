@@ -15,7 +15,12 @@
 
   <div class="wrapper content">
 
-    <h1>Продукция Рубин</h1>
+    <div class="centered-header">
+      <h1>Li-ion аккумуляторы Рубин</h1>
+      <div class="gray-text">
+        Li-ion аккмуляторы Рубин в формате батареек АА и ААА со встроенной USB зарядкой
+      </div>
+    </div>
 
     <div class="goods-list">
       <a href="/goods/prod-1.htm" class="product">
