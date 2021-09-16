@@ -46,11 +46,11 @@ body {
 	font-size: var(--font-size);
 	line-height: var(--line-height);
 	color: var(--color-text);
-/*
-	height: 100vh;
+
+	min-height: 100vh;
 	display: grid;
 	grid-template-rows: auto 1fr auto;
-*/
+
 }
 
 .wrapper {
@@ -81,6 +81,19 @@ h1 {
 	margin-top: 0.67em;
 	margin-bottom: 0.67em;
 }
+
+@media (max-width: 660px) {
+	h1 {
+		font-size: 1.75em;
+	}
+}
+
+@media (max-width: 520px) {
+	h1 {
+		font-size: 1.5em;
+	}
+}
+
 
 @media (max-width: 414px) {
 
