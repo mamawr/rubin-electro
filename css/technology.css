@@ -5,6 +5,13 @@
 	grid-template-columns: 0.60fr 1fr 1fr;
 	grid-template-areas: "tagline first second";
 	grid-gap: 6vw;
+	margin-top: 4.5em;
+}
+
+@media (max-width: 520px) {
+	.briefing {
+		margin-top: 3em;
+	}
 }
 
 .tagline {
