@@ -4,6 +4,7 @@
         <section>
            <h3>Продукция</h3>
            <ul>
+             <li><a href="/technology.htm">Технологии Рубин Li-ion</a></li>
              <li><a href="#">Аккумуляторы Рубин AAA USB</a></li>
              <li><a href="#">Аккумуляторы Рубин AAA USB-F</a></li>
              <li><a href="#">Аккумуляторы Рубин AA USB-F</a></li>

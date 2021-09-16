@@ -17,7 +17,7 @@
 
     <div class="cardset cardset-1">
       <div style="grid-area: card-technology">
-        <a href="/technology.php"><img src="img/aibo.jpg"/></a>
+        <a href="/technology.htm"><img src="img/aibo.jpg"/></a>
         Технологии <strong>Рубин&trade; Li-ion</strong>
       </div>
 

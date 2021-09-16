@@ -8,6 +8,8 @@ RewriteBase /
 RedirectMatch 404 /\.git
 RedirectMatch 404 /\.gitignore
 
+RewriteRule ^technology\.htm$ technology.php [L]
+
 RewriteRule ^goods$ goods/ [R,L]
 RewriteRule ^goods/$ goods.php [L]
 
