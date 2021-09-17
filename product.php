@@ -1,9 +1,16 @@
+<?php
+
+  require_once(dirname(__FILE__) . DIRECTORY_SEPARATOR . '_core.php');
+  $id = isset($_REQUEST['id']) ? intval($_REQUEST['id']) : '0';
+  if (!($product = getProductById($id)))
+    response404NotFound();
+
+?>
 <!doctype html>
 <html lang="ru-RU">
 <head>
-  <title>Продукция Рубин - аккумуляторы, батарейки, официальный сайт</title>
+  <title><?php print($product['name']); ?></title>
   <meta name="description" content="Аккумуляторы и батарейки Рубин. Официальный сайт." />
-  <link rel="canonical" href="https://rubin-electro.ru/" />
 
   <?php include('_meta.php'); ?>
 
@@ -15,32 +22,19 @@
 
 </head>
 <body>
+
   <script>
     var product_images = [
+<?php
+  foreach($product['images'] as $img) {
+    echo <<<IMG
       {
-        src: "/img/goods/01/01.jpg",
-        thumb: "/img/goods/01/01.jpg",
+        src: "{$img['media']}",
+        thumb: "{$img['thumb']}",
       },
-      {
-        src: "/img/goods/01/02.jpg",
-        thumb: "/img/goods/01/02.jpg",
-      },
-      {
-        src: "/img/goods/01/03.jpg",
-        thumb: "/img/goods/01/03.jpg",
-      },
-      {
-        src: "/img/goods/01/04.jpg",
-        thumb: "/img/goods/01/04.jpg",
-      },
-      {
-        src: "/img/goods/01/05.jpg",
-        thumb: "/img/goods/01/05.jpg",
-      },
-      {
-        src: "/img/goods/01/06.mp4",
-        thumb: "/img/goods/01/06.jpg",
-      },
+IMG;
+  }
+?>
     ];
   </script>
 
@@ -52,78 +46,47 @@
       <div class="header">
         <ul class="breadcrumbs">
           <li><a href="/goods/">Продукция</a></li>
-          <li><a href="/goods/">Аккумуляторные батарейки</a></li>
+<?php
+  foreach($product['breadcrumbs'] as $crumb) {
+    echo <<<CRUMB
+          <li><a href="{$crumb['link']}">{$crumb['name']}</a></li>
+CRUMB;
+  }
+?>
         </ul>
 
         <h1>Рубин AA-USB</h1>
 
         <div class="rating">
           <div class="stars">
-            <span class="material-icons-outlined star">star_purple500</span>
-            <span class="material-icons-outlined star">star_purple500</span>
-            <span class="material-icons-outlined star">star_purple500</span>
-            <span class="material-icons-outlined star">star_purple500</span>
-            <span class="material-icons-outlined star">star_purple500</span>
-            <span class="star-rating">5.0 (0)</span>
+<?php
+  for ($i=1; $i<=$product['rating']; $i++)
+    print('            <span class="material-icons-outlined star">star_purple500</span>');
+  if ($product['rating'] != (int)$product['rating']) {
+    print('            <span class="material-icons-outlined star">star_half</span>');
+    $i++;
+  }
+  for ($j=$i; $j<6; $j++)
+    print('            <span class="material-icons-outlined star">star_border_purple500</span>');
+?>
+            <span class="star-rating"><?php printf('%.1f', $product['rating']); ?> (<?php echo count($product['reviews']) ?>)</span>
           </div>
-          <a class="reviews" href="#">Отзывы: 0</a>
+          <a class="reviews" href="#">Отзывы: <?php echo count($product['reviews']) ?></a>
         </div>
       </div>
       <div class="description">
 
         <table>
+<?php
+  foreach($product['spec'] as $item) {
+    echo <<<SPEC
           <tr>
-            <td>Тип</td>
-            <td>Аккумуляторная батарейка</td>
+            <td>{$item['name']}</td>
+            <td>{$item['value']}</td>
           </tr>
-          <tr>
-            <td>Напряжение, В</td>
-            <td>1.5</td>
-          </tr>
-          <tr>
-            <td>Химический тип</td>
-            <td>Li-ion</td>
-          </tr>
-          <tr>
-            <td>Ёмкость, мВт•ч</td>
-            <td>1800</td>
-          </tr>
-          <tr>
-            <td>Ёмкость, мА•ч</td>
-            <td>1200</td>
-          </tr>
-          <tr>
-            <td>Кол-во циклов заряд-разряд</td>
-            <td>1000</td>
-          </tr>
-          <tr>
-            <td>Способ заряда</td>
-            <td>USB / Зарядное устройство</td>
-          </tr>
-          <tr>
-            <td>Зарядный разъём</td>
-            <td>USB (папа)</td>
-          </tr>
-          <tr>
-            <td>Быстрая зарядка</td>
-            <td>+</td>
-          </tr>
-          <tr>
-            <td>Световая индикация заряда</td>
-            <td>+</td>
-          </tr>
-          <tr>
-            <td>Стабилизация выходного напряжения</td>
-            <td>+</td>
-          </tr>
-          <tr>
-            <td>Масса, г</td>
-            <td>150</td>
-          </tr>
-          <tr>
-            <td>Размеры, мм</td>
-            <td>50х10</td>
-          </tr>
+SPEC;
+  }
+?>
         </table>
 
       </div>

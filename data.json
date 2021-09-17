@@ -1,0 +1,94 @@
+[
+    {
+        "id": 1,
+        "name": "Рубин AA-USB",
+        "rating": 5,
+        "reviews": [],
+        "breadcrumbs": [
+            {
+                "name": "Аккумуляторные батарейки",
+                "link": "\/goods\/"
+            }
+        ],
+        "images": [
+            {
+                "thumb": "\/img\/goods\/01\/01.jpg",
+                "media": "\/img\/goods\/01\/01.jpg"
+            },
+            {
+                "thumb": "\/img\/goods\/01\/02.jpg",
+                "media": "\/img\/goods\/01\/02.jpg"
+            },
+            {
+                "thumb": "\/img\/goods\/01\/03.jpg",
+                "media": "\/img\/goods\/01\/03.jpg"
+            },
+            {
+                "thumb": "\/img\/goods\/01\/04.jpg",
+                "media": "\/img\/goods\/01\/04.jpg"
+            },
+            {
+                "thumb": "\/img\/goods\/01\/05.jpg",
+                "media": "\/img\/goods\/01\/05.jpg"
+            },
+            {
+                "thumb": "\/img\/goods\/01\/06.jpg",
+                "media": "\/img\/goods\/01\/06.mp4"
+            }
+        ],
+        "spec": [
+            {
+                "name": "Тип",
+                "value": "Аккумуляторная батарейка"
+            },
+            {
+                "name": "Напряжение, В",
+                "value": 1.5
+            },
+            {
+                "name": "Химический тип",
+                "value": "Li-ion"
+            },
+            {
+                "name": "Ёмкость, мВт•ч",
+                "value": 1800
+            },
+            {
+                "name": "Ёмкость, мА•ч",
+                "value": 1200
+            },
+            {
+                "name": "Кол-во циклов заряд-разряд",
+                "value": 1000
+            },
+            {
+                "name": "Способ заряда",
+                "value": "USB \/ Зарядное устройство"
+            },
+            {
+                "name": "Зарядный разъём",
+                "value": "USB (папа)"
+            },
+            {
+                "name": "Быстрая зарядка",
+                "value": "+"
+            },
+            {
+                "name": "Световая индикация заряда",
+                "value": "+"
+            },
+            {
+                "name": "Стабилизация выходного напряжения",
+                "value": "+"
+            },
+            {
+                "name": "Масса, г",
+                "value": 150
+            },
+            {
+                "name": "Размеры, мм",
+                "value": "50х10"
+            }
+        ]
+    }
+]
