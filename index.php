@@ -22,17 +22,17 @@
       </div>
 
       <div style="grid-area: card-battery-green">
-        <a href="#"><img src="img/battery-green.jpg"/></a>
+        <a href="/goods/1.htm"><img src="img/battery-green.jpg"/></a>
         Аккумуляторы <strong>Рубин АА USB</strong> с магнитным колпачком
       </div>
 
       <div style="grid-area: card-battery-red-aa">
-        <a href="#"><img src="img/battery-red-aa.jpg"/></a>
+        <a href="/goods/2.htm"><img src="img/battery-red-aa.jpg"/></a>
         Аккумуляторы <strong>Рубин АА USB-F</strong>
       </div>
 
       <div style="grid-area: card-battery-red-aaa">
-        <a href="#"><img src="img/battery-red-aaa.jpg"/></a>
+        <a href="/goods/3.htm"><img src="img/battery-red-aaa.jpg"/></a>
         Аккумуляторы <strong>Рубин ААА USB-F</strong>
       </div>
     </div>

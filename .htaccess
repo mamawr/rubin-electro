@@ -13,3 +13,5 @@ RewriteRule ^technology\.htm$ technology.php [L]
 RewriteRule ^goods$ goods/ [R,L]
 RewriteRule ^goods/$ goods.php [L]
 
+RewriteRule ^goods/(.*)\.htm$ product.php?id=$1 [L]
+
