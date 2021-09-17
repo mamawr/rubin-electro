@@ -7,8 +7,8 @@
 
   <?php include('_meta.php'); ?>
 
-  <script src="/lib/fancybox/fancybox.js"></script>
-  <link rel="stylesheet" href="/lib/fancybox/fancybox.css" media="all" />
+  <script src="/lib/fancybox/fancybox.min.js"></script>
+  <link rel="stylesheet" href="/lib/fancybox/fancybox.min.css" media="all" />
 
   <link rel="stylesheet" href="/css/product.css" media="all" />
   <script src="/js/product.js"></script>
