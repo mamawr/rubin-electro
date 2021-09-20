@@ -55,7 +55,7 @@ CRUMB;
 ?>
         </ul>
 
-        <h1>Рубин AA-USB</h1>
+        <h1><?php echo $product['name'] ?></h1>
 
         <div class="rating">
           <div class="stars">
