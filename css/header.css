@@ -75,6 +75,7 @@ header li:after {
 	width: 0;
 }
 
+header li.active:after,
 header li:hover:after { 
 	width: 100%; 
 	left: 0; 

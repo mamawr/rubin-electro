@@ -11,6 +11,7 @@
 
 </head>
 <body>
+  <?php $NAV_CONTACTS = 1; ?>
   <?php include('_header.php'); ?>
 
   <div class="wrapper content">
