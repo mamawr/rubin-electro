@@ -1,0 +1,74 @@
+.contacts-set {
+	display: grid;
+	grid-template-columns: 0.5fr 1fr;
+	grid-gap: 1vw;
+	grid-template-areas: "contacts legal"
+                         "map map";
+}
+
+.contacts {
+	white-space: nowrap;
+	grid-area: contacts;
+	display: flex;
+	flex-direction: column;
+	gap: 0.6rem;
+}
+
+.contacts .qr {
+	flex-grow: 1;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.contacts .qr img {
+	max-width: 100%;
+}
+
+
+.legal {
+	grid-area: legal;
+}
+
+.map {
+	grid-area: map;
+}
+
+h2 {
+	margin: 0 0 1rem 0;
+}
+
+.material-icons-outlined {
+	font-size: 1.4rem;
+	vertical-align: middle;
+	color: #858585;
+	margin-right: 0.4rem;
+}
+
+.table tr:last-child td {
+	border-bottom: none;
+}
+
+.contacts a {
+	text-decoration: none;
+	border-bottom: 1px dashed var(--color-link);
+}
+
+.contacts a.tel {
+	border-bottom: none;
+	color: var(--color-text);
+}
+
+@media (max-width: 700px) {
+	.contacts-set {
+		grid-template-columns: 1fr;
+		grid-template-areas: "contacts"
+		                     "map"
+		                     "legal";
+	}
+	.contacts .qr {
+		display: none;
+	}
+}
