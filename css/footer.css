@@ -31,15 +31,15 @@ footer nav ul {
 	margin: 0;
 }
 
-footer nav li {
+footer nav ul li {
 	line-height: 1.2em;
-	white-space: nowrap;
 }
 
-footer nav ul  a {
+footer nav ul li a {
 	text-decoration: none;
 	color: #656565;
 	font-size: 81.25%;
+	white-space: nowrap;
 }
 
 .foot-line {

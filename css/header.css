@@ -87,6 +87,7 @@ header li:hover:after {
 	header {
 		position: sticky;
 		top: 0;
+		z-index: 2501;
 	}
 
 	header .logo>div {
