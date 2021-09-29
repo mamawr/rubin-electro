@@ -2,8 +2,7 @@
 	display: grid;
 	grid-template-columns: 0.5fr 1fr;
 	grid-gap: 1vw;
-	grid-template-areas: "contacts legal"
-                         "map map";
+	grid-template-areas: "contacts map";
 }
 
 .contacts {

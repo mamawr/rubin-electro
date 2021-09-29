@@ -32,7 +32,8 @@
         <div class="qr"><img src="/img/qr-contacts.png"></div>
       </div>
 
-      <div class="legal card">
+      <div class="legal">
+<!--
         <h2>Реквизиты</h2>
         <table class="table">
           <tr>
@@ -76,6 +77,7 @@
             <td>Граденко Сергей Сергеевич</td>
           </tr>
         </table>
+-->
       </div>
 
 
