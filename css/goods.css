@@ -15,8 +15,9 @@
 	color: var(--color-text);
 
 	padding: 0.3em;
-    border: solid 1px transparent;
+	border: solid 1px transparent;
 	border-radius: 6px;
+	transition: all .3s linear 0s;
 }
 
 .goods-list>*:hover {
@@ -30,6 +31,14 @@
 
 .goods-list .gray-text {
 	margin-top: 0.7rem;
+}
+
+.goods-list small {
+	display: block;
+	color: #88919D;
+	font-size: 0.8125rem;
+	line-height: 0.9375rem;
+	margin-bottom: 0.3rem;
 }
 
 @media (max-width: 1140px) {

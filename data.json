@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "name": "Рубин AA-USB",
+        "name": "Рубин AA-USB(M)",
         "rating": 5,
         "reviews": [],
         "breadcrumbs": [
@@ -93,7 +93,7 @@
     },
     {
         "id": 2,
-        "name": "Рубин AA-USB(F)",
+        "name": "Рубин AA-USB",
         "rating": 5,
         "reviews": [],
         "breadcrumbs": [
@@ -185,7 +185,7 @@
     },
     {
         "id": 3,
-        "name": "Рубин AAA-USB(F)",
+        "name": "Рубин AAA-USB",
         "rating": 5,
         "reviews": [],
         "breadcrumbs": [

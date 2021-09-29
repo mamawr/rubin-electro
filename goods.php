@@ -27,7 +27,8 @@
       <a href="/goods/1.htm" class="product">
         <img src="/img/goods/01/01.jpg">
         <div>
-           Аккумулятор <strong>Рубин АА USB</strong>
+           <small>Аккумуляторная батарейка</small>
+           <strong>Рубин АА-USB(M)</strong>
            <div class="gray-text">
              Li-ion аккумулятор типоразмера AA со встроенной USB-зарядкой
            </div>
@@ -36,7 +37,8 @@
       <a href="/goods/2.htm" class="product">
         <img src="/img/goods/02/01.jpg">
         <div>
-           Аккумулятор <strong>Рубин АА USB-F</strong>
+           <small>Аккумуляторная батарейка</small>
+           <strong>Рубин АА-USB</strong>
            <div class="gray-text">
              Li-ion аккумулятор типоразмера AA со встроенной USB-зарядкой
            </div>
@@ -45,9 +47,10 @@
       <a href="/goods/3.htm" class="product">
         <img src="/img/goods/03/01.jpg">
         <div>
-           Аккумулятор <strong>Рубин ААA USB-F</strong>
+           <small>Аккумуляторная батарейка</small>
+           <strong>Рубин ААA-USB</strong>
            <div class="gray-text">
-             Li-ion аккумулятор типоразмера AA со встроенной USB-зарядкой
+             Li-ion аккумулятор типоразмера ААА со встроенной USB-зарядкой
            </div>
         </div>
       </a>
