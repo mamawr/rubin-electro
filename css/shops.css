@@ -1,0 +1,36 @@
+.shops {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap: 2vw;
+}
+
+.shops a {
+	max-width: 100%;
+	overflow: hidden;
+	border-radius: 10px;
+	display: block;
+}
+
+.shops a>img {
+	display: block;
+	width: 100%;
+    transition: all .3s linear 0s;
+}
+
+.shops>*>img:hover {
+	transform: scale(1.02);
+	filter: brightness(80%);
+	will-change: transform;
+}
+
+@media (max-width: 700px) {
+	.shops {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+}
+
+@media (max-width: 550px) {
+	.shops {
+		grid-template-columns: 1fr 1fr;
+	}
+}
